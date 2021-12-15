@@ -14,7 +14,9 @@
 <body>
     
     <div id="root">
-        <h1 v-if="mailArray.length >= 10"></h1>
+        <template v-if="mailArray.length >= 10">
+            <div v-for="mail in mailArray">{{ mail }}</div>
+        </template>
     </div>
 
     <script type="text/javascript" src="js/script.js"></script>
